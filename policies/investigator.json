@@ -1,0 +1,28 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadOnlyAccess",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:Describe*",
+        "s3:Get*",
+        "s3:List*",
+        "iam:Get*",
+        "iam:List*",
+        "cloudtrail:LookupEvents",
+        "cloudtrail:DescribeTrails",
+        "cloudtrail:GetTrailStatus",
+        "logs:DescribeLogGroups",
+        "logs:DescribeLogStreams",
+        "logs:GetLogEvents",
+        "guardduty:Get*",
+        "guardduty:List*",
+        "organizations:Describe*",
+        "organizations:List*",
+        "sts:GetCallerIdentity"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
